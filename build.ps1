@@ -49,7 +49,7 @@ if (!$?) {
     exit 1 
 }
 
-Copy-Item -Path Defs, About, "1.3", "1.2", "1.1", "1.0"  , Languages, Patches, Textures -Destination "$buildDir/Tmp" -Recurse
+Copy-Item -Path Defs, About, "1.6", "1.5", "1.4", "1.3", "1.2", "1.1", "1.0"  , Languages, Patches, Textures -Destination "$buildDir/Tmp" -Recurse
 Copy-Item -Path LoadFolders.xml -Destination "$buildDir/Tmp/LoadFolders.xml" 
 
 #Remove hugs lib dll if present 

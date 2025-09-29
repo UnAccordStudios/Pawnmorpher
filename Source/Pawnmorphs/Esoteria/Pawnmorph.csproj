@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>portable</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\1.5\Assemblies\</OutputPath>
+    <OutputPath>..\..\..\1.6\Assemblies\</OutputPath>
     <DefineConstants>TRACE;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -29,7 +29,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\..\1.5\Assemblies\</OutputPath>
+    <OutputPath>..\..\..\1.6\Assemblies\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -39,7 +39,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Hotswapping|AnyCPU'">
     <DebugSymbols>false</DebugSymbols>
-    <OutputPath>..\..\..\1.5\Assemblies\</OutputPath>
+    <OutputPath>..\..\..\1.6\Assemblies\</OutputPath>
     <DefineConstants>TRACE;DEBUG</DefineConstants>
     <DocumentationFile>..\..\..\Documentation\Pawnmorph.xml</DocumentationFile>
     <DebugType>none</DebugType>
@@ -994,7 +994,7 @@
   <!--Only use the Krafs stub if we can't access the real assembly -->
   <ItemGroup Condition="!Exists('$(RimworldFolder)\Managed\Assembly-CSharp.dll')">
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.5.4104-beta</Version>
+      <Version>[1.6.0,1.7.0)</Version>
       <IncludeAssets>compile</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
